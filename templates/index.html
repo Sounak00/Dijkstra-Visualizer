@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Dijkstra Visualizer</title>
+<link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+<div class="container">
+<h1>Dijkstra Visualizer</h1>
+
+
+<section class="input-area">
+<label for="graphText">Graph input (each line: A,B,2)</label>
+<textarea id="graphText" rows="10">A,B,2
+A,D,7
+A,F,12
+A,G,2
+B,C,1
+B,D,4
+B,E,3
+B,G,5
+C,E,4
+C,G,4
+D,E,1
+D,H,5
+E,H,7
+F,H,3</textarea>
+
+
+<div class="buttons">
+<button id="parseBtn">Parse & Show Matrix</button>
+</div>
+</section>
+
+
+<section class="matrix-area">
+<h2>Adjacency Matrix</h2>
+<div id="matrixWrapper"></div>
+</section>
+
+
+<section class="shortest-area">
+<h2>Compute Shortest Path</h2>
+<label>Source: <input id="sourceInput" maxlength="2" size="3" /></label>
+<label>Destination: <input id="destInput" maxlength="2" size="3" /></label>
+<button id="shortestBtn">Find Shortest Path</button>
+
+
+<div id="result"></div>
+</section>
+
+
+<footer>
+<small>Frontend + Flask backend. Run `pip install -r requirements.txt` then `python app.py`.</small>
+</footer> 
+</div>
+
+
+<script src="/static/script.js"></script>
+</body>
+</html>
