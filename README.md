@@ -1,4 +1,4 @@
-# Dijkstra Web Project
+# Pathfinder: Dijkstra Algorithm Visualizer
 
 A small web app to **visualize graphs and compute shortest paths** using **Dijkstra's algorithm**.  
 Users can input a graph, see its adjacency matrix, and find the shortest path between nodes.
